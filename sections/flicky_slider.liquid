@@ -1,6 +1,20 @@
 {{ 'flickity.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'flickity.pkgd.min.js' | asset_url }}" defer></script>
 
+<div class="main-carousel">
+  {% for block in section.blocks %}
+    <div class="carousel-cell">
+      {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: 
+        width: block.settings.image.width,
+        height: block.settings.image.height,
+        alt: block.settings.image.alt,
+        loading: 'lazy',
+        sizes: '100vw'
+      }}
+    </div>
+  {% endfor %}
+</div>
+
 {% schema %}
 {
   "name": "flickity slideshow",
