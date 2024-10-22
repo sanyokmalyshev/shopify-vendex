@@ -37,10 +37,13 @@
   var flkty = new Flickity( elem, {
     cellAlign: 'left',
     contain: true,
-    autoplay: {{  section.settings.autoplay }},
     percentPosition: false,
-   
+    autoplay: {{ section.settings.autoplay }}
+    pageDots: {{ section.settings.enabledBulletNav }}
+    prevNextButtons: {{ section.settings.enabledBulletNav }},
   });
+  console.log(elem, "elem")
+  console.log(flkty, "flkty")
 </script>
 
 {% schema %}
@@ -62,7 +65,7 @@
       "type": "checkbox",
       "id": "enabledBulletNav",
       "label": "Enabled bullet navigation",
-      "default": true
+      "default": false
     },
     {
       "type": "checkbox",
