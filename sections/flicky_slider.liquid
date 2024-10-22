@@ -4,13 +4,15 @@
 <div class="main-carousel">
   {% for block in section.blocks %}
     <div class="carousel-cell">
-      {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: 
-        width: block.settings.image.width,
-        height: block.settings.image.height,
-        alt: block.settings.image.alt,
-        loading: 'lazy',
-        sizes: '100vw'
-      }}
+      {% unless block.settings.image == blank %}
+        {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: 
+            width: block.settings.image.width,
+            height: block.settings.image.height,
+            alt: block.settings.image.alt,
+            loading: 'lazy',
+            sizes: '100vw'
+        }}
+      {% endunless %}
     </div>
   {% endfor %}
 </div>
