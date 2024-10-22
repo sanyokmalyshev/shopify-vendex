@@ -18,15 +18,22 @@
             "image": "shopify://shop_images/cookie.webp"
           }
         },
+        "image_3rckLx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_60844f89-a183-4f2a-aef8-dc8b059d3bd1.webp"
+          }
+        },
         "video_TCGGAe": {
           "type": "video",
           "settings": {
-            "video": ""
+            "video": "http://content.optimumnutrition.com/v/on/on-gold-standard-100-whey-protein-US_Video_01/mp4_720p"
           }
         }
       },
       "block_order": [
         "image_Mn3gii",
+        "image_3rckLx",
         "video_TCGGAe"
       ],
       "settings": {
