@@ -9,6 +9,32 @@
  */
 {
   "sections": {
+    "flicky_slider_L7q9Yy": {
+      "type": "flicky_slider",
+      "blocks": {
+        "image_Mn3gii": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cookie.webp"
+          }
+        },
+        "video_TCGGAe": {
+          "type": "video",
+          "settings": {
+            "video": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Mn3gii",
+        "video_TCGGAe"
+      ],
+      "settings": {
+        "autoplay": false,
+        "enabledBulletNav": true,
+        "enabledArrowNav": false
+      }
+    },
     "main": {
       "type": "test-proteine",
       "blocks": {
@@ -112,31 +138,6 @@
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 44
-      }
-    },
-    "flicky_slider_L7q9Yy": {
-      "type": "flicky_slider",
-      "blocks": {
-        "image_Mn3gii": {
-          "type": "image",
-          "settings": {
-          }
-        },
-        "video_TCGGAe": {
-          "type": "video",
-          "settings": {
-            "video": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_Mn3gii",
-        "video_TCGGAe"
-      ],
-      "settings": {
-        "autoplay": false,
-        "enabledBulletNav": true,
-        "enabledArrowNav": false
       }
     }
   },
