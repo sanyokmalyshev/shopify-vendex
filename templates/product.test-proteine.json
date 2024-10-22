@@ -37,7 +37,7 @@
         "video_TCGGAe"
       ],
       "settings": {
-        "autoplay": false,
+        "autoplay": true,
         "enabledBulletNav": true,
         "enabledArrowNav": false
       }
