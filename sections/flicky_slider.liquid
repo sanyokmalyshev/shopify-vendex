@@ -1,5 +1,7 @@
 {{ 'flickity.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'flickity.pkgd.min.js' | asset_url }}" async></script>
+{% # theme-check-disable ParserBlockingScript %}
+{{ 'flickity.pkgd.min.js' | asset_url | script_tag }}
+
 
 <div class="main-carousel">
   {% for block in section.blocks %}
