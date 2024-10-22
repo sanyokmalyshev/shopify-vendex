@@ -22,7 +22,7 @@
 
       {% if block.type == 'video' %}
         {% unless block.settings.video == blank %}
-          <video controls>
+          <video class="carousel-video" controls>
             <source src="{{ block.settings.video }}" type="video/mp4">
             Not support
           </video>
@@ -42,6 +42,7 @@
     autoplay: {{ section.settings.autoplay }},
     prevNextButtons: {{ section.settings.enabledArrowNav }},
   });
+
 </script>
 
 {% schema %}
