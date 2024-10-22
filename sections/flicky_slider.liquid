@@ -1,6 +1,8 @@
 {{ 'flickity.css' | asset_url | stylesheet_tag }}
+{{ 'components.flickity.css' | asset_url | stylesheet_tag }}
 {% # theme-check-disable ParserBlockingScript %}
 {{ 'flickity.pkgd.min.js' | asset_url | script_tag }}
+
 
 
 <div class="main-carousel">
@@ -20,7 +22,7 @@
 
       {% if block.type == 'video' %}
         {% unless block.settings.video == blank %}
-          <video width="320" height="240" controls>
+          <video controls>
             <source src="{{ block.settings.video }}" type="video/mp4">
             Not support
           </video>
@@ -34,7 +36,10 @@
   var elem = document.querySelector('.main-carousel');
   var flkty = new Flickity( elem, {
     cellAlign: 'left',
-    contain: true
+    contain: true,
+    autoplay: {{  section.settings.autoplay }},
+    percentPosition: false,
+   
   });
 </script>
 
@@ -50,7 +55,8 @@
     {
       "type": "checkbox",
       "id": "autoplay",
-      "label": "Slide autoplay"
+      "label": "Slide autoplay",
+      "default": false
     },
     {
       "type": "checkbox",

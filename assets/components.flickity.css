@@ -1,0 +1,12 @@
+.main-carousel .carousel-cell {
+  width: 100%;
+  height: 500px;
+}
+
+.main-carousel .carousel-cell img,
+.main-carousel .carousel-cell video{
+  object-fit: cover;
+  object-position: cover;
+  width: 100%;
+  height: 100%;
+}
